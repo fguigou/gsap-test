@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.synchronit.appbase</groupId>
-	<artifactId>continuous-delivery</artifactId>
+	<artifactId>gsap-test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>continuous-delivery</name>
+	<name>gsap-test</name>
 
 	<properties>
 		<java.version>1.7</java.version>
@@ -21,7 +21,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>continuous-delivery</finalName>
+		<finalName>gsap-test</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
