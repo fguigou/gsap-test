@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires"       content="0" />
+<meta http-equiv="pragma"        content="no-cache" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Application Base Home</title>
+		<script type="text/javascript" src="../js/jquery/core.js"></script>
+		<script type="text/javascript" src="../js/jquery/selector.js"></script>
+		<script type="text/javascript" src="../js/jquery/event.js"></script>
+		<script type="text/javascript" src="../js/jquery/ajax.js"></script>
+		<script type="text/javascript" src="../js/jquery/fx.js"></script>
+
+		<script type="text/javascript" src="../js/iutil.js"></script>
+		<script type="text/javascript" src="../js/idrag.js"></script>
+		<script type="text/javascript" src="../js/accordion.js"></script>
+		<script type="text/javascript" src="../js/carousel.js"></script>
+		<script type="text/javascript" src="../js/fisheye.js"></script>
+
+		<script type="text/javascript" src="../js/iautocompleter.js"></script>
+		<script type="text/javascript" src="../js/icassistant.js"></script>
+		<script type="text/javascript" src="../js/iexpander.js"></script>
+		<script type="text/javascript" src="../js/imagebox.js"></script>
+		<script type="text/javascript" src="../js/iresizable.js"></script>
+		<script type="text/javascript" src="../js/iselect.js"></script>
+
+		<script type="text/javascript" src="../js/islider.js"></script>
+		<script type="text/javascript" src="../js/islideshow.js"></script>
+		<script type="text/javascript" src="../js/isortables.js"></script>
+		<script type="text/javascript" src="../js/ittabs.js"></script>
+<style type="text/css" media="screen">
+{		
+	margin: 0;
+	padding: 0;
+}
+img
+{
+	border: none;
+}
+body
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	background-color: #000;
+    background-image:url('../img/application_base_wide.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center bottom;
+}
+#carousel
+{
+	width: 700px;
+	height: 150px;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -350px;
+}
+#carousel a
+{
+	position: absolute;
+	width: 110px;
+}
+
+#ImageBoxOverlay
+{
+	background-color: #000;
+	z-index: 1000;
+}
+#ImageBoxOuterContainer{
+	z-index: 1000;
+}
+#ImageBoxCaption
+{
+	background-color: #F4F4EC;
+}
+#ImageBoxContainer
+{
+	width: 250px;
+	height: 250px;
+	background-color: #F4F4EC;
+}
+#ImageBoxCaptionText
+{
+	font-weight: bold;
+	padding-bottom: 5px;
+	font-size: 13px;
+	color: #000;
+}
+#ImageBoxCaptionImages
+{
+	margin: 0;
+}
+#ImageBoxNextImage
+{
+	background-image: url(../img/spacer.gif);
+	background-color: transparent;
+}
+#ImageBoxPrevImage
+{
+	background-image: url(../img/spacer.gif);
+	background-color: transparent;
+}
+#ImageBoxNextImage:hover
+{
+	background-image: url(../img/next_image.jpg);
+	background-repeat:	no-repeat;
+	background-position: right top;
+}
+#ImageBoxPrevImage:hover
+{
+	background-image: url(../img/prev_image.jpg);
+	background-repeat:	no-repeat;
+	background-position: left bottom;
+}
+</style>
+</head>
+
+<body>
+
+<br/>
+Welcome to the Application Base Home.<br/>
+If this is your first time here, we suggest you to start with the FAQs or the Wiki.<br/>
+
+<div id="carousel">
+	<a href="https://github.com/synchronit/application-base/wiki" title="Documentation (WIKI)" rel="imagebox"><img src="../img/wikipedia-logo.png" width="100%" /></a>
+	<a href="http://dev.synchronit.com/appbase-webconsole/" title="Web Console" rel="imagebox"><img src="../img/console.png" width="100%" /></a>
+	<a href="../img/wip.gif" title="Forum - coming soon ..." rel="imagebox"><img src="../img/forums.png" width="100%" /></a>
+	<a href="../img/wip.gif" title="FAQ - coming soon ..." rel="imagebox"><img src="../img/faq.png" width="100%" /></a>
+	<a href="http://83.169.10.6:8080/pls/ingreso/presentation.bienvenida?LANG=EN" title="Old Demo (DataFacil)" rel="imagebox"><img src="../img/demo.gif" width="100%" /></a>
+	<a href="http://sourceforge.net/projects/jfql/" title="Download" rel="imagebox"><img src="../img/download.png" width="100%" /></a>
+	<a href="http://dev.synchronit.com/presentation-server-test/" title="Presentation Server" rel="imagebox"><img src="../img/presenter.png" width="100%" /></a>
+	<a href="http://dev.synchronit.com/appbase-test-site/" title="Testing & Examples" rel="imagebox"><img src="../img/ok.png" width="100%" /></a>
+	<a href="http://dev.synchronit.com/appbase-webconsole/json?command=show%20forms" title="JSON http interface" rel="imagebox"><img src="../img/json-kv.png" width="100%" /></a>
+</div>
+
+<script type="text/javascript">
+	window.onload = 
+		function()
+		{
+			$('#carousel').Carousel(
+				{
+					itemWidth: 110,
+					itemHeight: 62,
+					itemMinWidth: 50,
+					items: 'a',
+					reflections: .0,
+					rotationSpeed: 1.8
+				}
+			);
+			$.ImageBox.init(
+				{
+					loaderSRC: 'images/imagebox/loading.gif',
+					closeHTML: '<img src="images/imagebox/close.jpg" />'
+				}
+			);
+		};
+</script>
+		<script language="JavaScript" type="text/javascript">var client_id = 1;</script>
+
+</body>
+</html>
